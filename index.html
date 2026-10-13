@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#101715">
+    <meta
+      name="description"
+      content="A personal online business card."
+    >
+    <title>Thapa obed | Business Card</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main class="content-wrapper">
+      <article class="card" aria-labelledby="person-name">
+        <header class="card-header">
+          <div class="avatar-ring">
+            <span class="avatar-initials" aria-hidden="true">TO</span>
+            <img
+              class="profile-image"
+              src="profile.jpg"
+              alt="Portrait of Thapa Obed"
+              onerror="this.hidden = true"
+            >
+          </div>
+          <h1 class="name" id="person-name"> Thapa obed</h1>
+          
+
+          <p class="role">Student</p>
+          <span class="badge">Seeking for opportunities</span>
+        </header>
+
+        <div class="card-content">
+          <p class="bio">
+            Hello my name is Thapa obed. I am a student and I am passionate about technology and programming. I enjoy learning new skills and working on projects that challenge me to grow as a developer.
+          </p>
+
+          <section class="skills-grid" aria-label="Skills">
+            <span class="skill-tag">python</span>
+            <span class="skill-tag">web development</span>
+            <span class="skill-tag">data analysis</span>
+            <span class="skill-tag">problem solving</span>
+          </section>
+
+          <nav class="action-buttons" aria-label="Main actions">
+            <a class="button" href="mailto:obedthapa099@gmail.com">Contact Me</a>
+            <a class="button" href="https://obedthapa.com">Portfolio</a>
+          </nav>
+
+          <nav class="contact-section" aria-label="Contact">
+            <a class="contact-item" href="mailto:obedthapa099@gmail.com">
+              <span class="icon" aria-hidden="true">✉</span>
+              <span class="text">obedthapa099@gmail.com</span>
+            </a>
+            <a class="contact-item" href="https://www.github.com/obed113">
+              <span class="icon" aria-hidden="true">in</span>
+              <span class="text">github.com/obed113</span>
+            </a>
+            <a class="contact-item" href="https://obedthapa.com">
+              <span class="icon" aria-hidden="true">↗</span>
+              <span class="text">obedthapa.com</span>
+            </a>
+          </nav>
+        </div>
+
+        <footer class="card-footer">
+          <p>© <span id="year"></span> Thapa obed</p>
+        </footer>
+      </article>
+
+      <section class="card guestbook-card" aria-labelledby="guestbook-title">
+        <header class="card-header guestbook-header">
+          <h2 class="name" id="guestbook-title">Guestbook</h2>
+          <p class="role">Leave a message</p>
+        </header>
+        <div class="card-content">
+          <form class="guestbook-form" action="#" method="get">
+            <label for="guest-name">Your name</label>
+            <input id="guest-name" name="name" type="text" autocomplete="name" required>
+
+            <label for="guest-message">Message</label>
+            <textarea id="guest-message" name="message" rows="5" required></textarea>
+
+            <button class="button" type="submit">Sign the guestbook</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
